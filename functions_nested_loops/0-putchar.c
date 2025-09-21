@@ -1,21 +1,19 @@
-#include <stdio.h>
-
 /**
- * main - Prints _putchar, followed by a new line.
- *
- * Return: Always 0 (Success)
+ * main - entry point
+ * Description: program start and ends here.
+ * Return: 0 on success.
  */
-
+int _putchar(char c);
 int main(void)
 {
-	char str[] = "_putchar";
+	char winners[8] = "_putchar";
+
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; i < 8; i++)
 	{
-		putchar(str[i]);
+		_putchar(winners[i]);
 	}
-	putchar('\n');
-
+	_putchar('\n');
 	return (0);
 }
