@@ -1,13 +1,14 @@
+#include "main.h"
+
 /**
- * main - entry point
- * Description: program start and ends here.
- * Return: 0 on success.
+ * main - Entry point
+ * Description: prints "_putchar" followed by a new line
+ *
+ * Return: Always 0 (Success)
  */
-int _putchar(char c);
 int main(void)
 {
 	char winners[8] = "_putchar";
-
 	int i;
 
 	for (i = 0; i < 8; i++)
@@ -15,5 +16,7 @@ int main(void)
 		_putchar(winners[i]);
 	}
 	_putchar('\n');
+
 	return (0);
 }
+
