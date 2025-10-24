@@ -1,8 +1,3 @@
-int main(void)
-{
-	return (0);
-}
-
 #include "dog.h"
 
 /**
@@ -12,14 +7,14 @@ int main(void)
  * @age: age of the dog
  * @owner: owner of the dog
  *
- * Description: If @d is not NULL, set its fields; otherwise do nothing.
+ * Description: If @d is NULL, the function does nothing.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != 0)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
+	if (d == 0)
+		return;
+
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
