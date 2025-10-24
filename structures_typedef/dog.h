@@ -14,12 +14,12 @@ struct dog
 	char *owner;
 };
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-
 /**
- * print_dog - prints a struct dog
- * @d: pointer to struct dog
+ * dog_t - typedef for struct dog
  */
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
 #endif /* DOG_H */
